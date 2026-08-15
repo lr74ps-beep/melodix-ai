@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MELODIX AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<h1>🎵 MELODIX AI</h1>
+
+<p class="subtitle">
+Создай свою песню с помощью AI
+</p>
+
+
+<div class="card">
+
+<h2>О чём будет песня?</h2>
+
+<textarea id="idea" placeholder="Например: песня про любовь, машину, друзей..."></textarea>
+
+
+<h2>Выбери стиль</h2>
+
+<div class="styles">
+
+<button onclick="choose('Рэп')">🎤 Рэп</button>
+<button onclick="choose('Рок')">🎸 Рок</button>
+<button onclick="choose('Поп')">🎶 Поп</button>
+<button onclick="choose('Шансон')">🥃 Шансон</button>
+
+</div>
+
+
+<button class="create" onclick="createSong()">
+Создать песню
+</button>
+
+</div>
+
+
+<div id="result" class="card hidden">
+
+<h2>🎉 Ваша песня готова</h2>
+
+<h3 id="title"></h3>
+
+<p id="text"></p>
+
+
+<button>
+📤 Поделиться VK
+</button>
+
+
+</div>
+
+
+<div class="pro">
+
+⭐ MELODIX PRO
+
+<br>
+
+99 ₽ / месяц
+
+</div>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
